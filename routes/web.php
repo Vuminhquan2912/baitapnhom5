@@ -39,7 +39,9 @@ Route::prefix($prefix)->group(function () use($controllerName){
     
     Route::post('/search',$controller.'search')->name($controllerName.'/search');   
 
-    Route::get('/login',$controller.'login')->name($controllerName.'/login'); 
+    Route::get('/login',$controller.'login')->name($controllerName.'/login');
+
+    Route::get('/forgot',$controller.'forgot')->name($controllerName.'/forgot'); 
 });
 
 
